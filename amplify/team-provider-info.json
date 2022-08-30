@@ -1,0 +1,25 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-disneysocial-dev-140738-authRole",
+      "UnauthRoleArn": "arn:aws:iam::902550299788:role/amplify-disneysocial-dev-140738-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::902550299788:role/amplify-disneysocial-dev-140738-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-disneysocial-dev-140738-deployment",
+      "UnauthRoleName": "amplify-disneysocial-dev-140738-unauthRole",
+      "StackName": "amplify-disneysocial-dev-140738",
+      "StackId": "arn:aws:cloudformation:us-east-1:902550299788:stack/amplify-disneysocial-dev-140738/a2886bf0-288e-11ed-b669-12bb7fa81f99",
+      "AmplifyAppId": "dy4o1hdacchfz"
+    },
+    "categories": {
+      "auth": {
+        "disneysocial8b76526f": {
+          "userPoolId": "us-east-1_3LjE9kWQH",
+          "userPoolName": "disneyusers",
+          "webClientId": "3gvqoe6jomlm1phe3pjuerpc1u",
+          "nativeClientId": "3gvqoe6jomlm1phe3pjuerpc1u"
+        }
+      }
+    }
+  }
+}

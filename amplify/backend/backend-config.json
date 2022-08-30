@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "disneysocial8b76526f": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
