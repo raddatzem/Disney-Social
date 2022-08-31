@@ -1,5 +1,6 @@
 .news-app {
     display: flex;
+    
     justify-content: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
@@ -8,10 +9,11 @@
     width: 500px;
     padding: 20px;
     border: 2px solid;
-    border-color: bisque;
+    border-color: rgb(127, 122, 240);
     margin-bottom: 20px;
 }
 
 .news-img {
     width: 400px;
+    justify-content: center;
 }
