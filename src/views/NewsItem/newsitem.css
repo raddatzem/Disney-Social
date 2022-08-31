@@ -1,0 +1,17 @@
+.news-app {
+    display: flex;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.news-item {
+    width: 500px;
+    padding: 20px;
+    border: 2px solid;
+    border-color: bisque;
+    margin-bottom: 20px;
+}
+
+.news-img {
+    width: 400px;
+}

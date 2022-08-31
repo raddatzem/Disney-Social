@@ -1,8 +1,24 @@
  
-import React from 'react';
+import React, {useState} from 'react';
+import Amplify, {Auth} from 'aws-amplify'
+
+
+
 const Home = () => {
+ const [userName, setUserName] = useState("")
+
+ Auth.currentUserInfo().then(obj => setUserName(`Welcome back ${obj.username}`))
+
+
+
  return (
-   <div>HOME</div>
+   <div>
+    {userName}
+    
+    
+    
+    
+    </div>
  );
 };
  
