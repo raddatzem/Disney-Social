@@ -21,13 +21,13 @@ export function Layout() {
      <nav className="NavbarItems">
      <h1 className="navbar-logo">Disney Social</h1>
      <img className='icon' src=""></img>
-       <Button className='nav-links' onClick={() => navigate('/')}>Profile</Button>
+       <Button className='nav-links' onClick={() => navigate('/')}>Home</Button>
        
        <Button className='nav-links'onClick={() => navigate('/timeline')}>
-         Timeline
+         Disney News
        </Button>
        <Button className='nav-links' onClick={() => navigate('/timeline')}>
-         Second Protected Route
+         Second Route
        </Button>
        {route !== 'authenticated' ? (
          <Button className='nav-links' onClick={() => navigate('/login')}>Login</Button>
