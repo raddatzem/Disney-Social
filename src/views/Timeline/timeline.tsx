@@ -9,8 +9,9 @@ const Timeline = () => {
 
     useEffect(() => {
         const getArticles = async () => {
-            
-            console.log(response)
+            const response = await axios.get('https://1himh5w4nf.execute-api.us-east-1.amazonaws.com/get-disney-world-news')
+
+            console.log(response.data.articles)
             setArticles(response.data.articles)
         }
         getArticles()

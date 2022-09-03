@@ -3,7 +3,7 @@ import {
  Timeline as TimelineView,
  Home as HomeView,
  Login as LoginView,
- TimelineTwo as TimelineTwoView 
+ CruiseNews as TimelineTwoView 
 } from '.';
 
  
@@ -24,7 +24,7 @@ const routes = [
    authRequired: true
  },
  {
-    path: '/timeline-two',
+    path: '/cruisenews',
     renderer: (params = {}) => <TimelineTwoView {...params} />,
     authRequired: true
   },

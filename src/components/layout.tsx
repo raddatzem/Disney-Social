@@ -23,10 +23,10 @@ export function Layout() {
      <img className='icon' src=""></img>
        <Button className='nav-links' onClick={() => navigate('/')}>News</Button>
        
-       <Button className='nav-links'onClick={() => navigate('/timeline')}>
+       <Button className='nav-links'onClick={() => navigate('/cruisenews')}>
          Disney Cruise
        </Button>
-       <Button className='nav-links' onClick={() => navigate('/timeline-two')}>
+       <Button className='nav-links' onClick={() => navigate('/timeline')}>
          Disney World
        </Button>
        {route !== 'authenticated' ? (

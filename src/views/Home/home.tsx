@@ -16,7 +16,7 @@ const Home = () => {
 
  useEffect(() => {
     const getArticles = async () => {
-        
+        const response = await axios.get('https://1himh5w4nf.execute-api.us-east-1.amazonaws.com/get-news-api')
         console.log(response)
         setArticles(response.data.articles)
     }
