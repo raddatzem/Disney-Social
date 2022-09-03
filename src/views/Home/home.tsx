@@ -3,7 +3,8 @@ import React, {useState, useEffect} from 'react';
 import Amplify, {Auth} from 'aws-amplify'
 import "./home.css"
 import axios from "axios"
-import NewsItem from '../NewsItem';
+import NewsItem from '../../components/NewsItem';
+import { AmplifyNewsCard } from '../../components/Amplify-Card/amplifyNewsItem';
 
 
 const Home = () => {
@@ -33,7 +34,7 @@ const Home = () => {
     <div>
      {articles.map(article => {
                 return(
-                    <NewsItem 
+                    <AmplifyNewsCard 
                     title={article['title']}
                     description={article['description']}
                     url={article['url']}
