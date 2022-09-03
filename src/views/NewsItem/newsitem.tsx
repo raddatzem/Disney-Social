@@ -1,6 +1,5 @@
 import React from 'react';
-import './newsitem.css'
-
+import "./newsitem.css"
 
 
 
