@@ -31,7 +31,7 @@ const Home = () => {
     <img src={require("./welcome.png")}></img>
       <br></br>
       <br></br>
-     Welcome to Disney Social {userName}! 
+     Welcome to Disney Social {userName? userName: "Please Login To Continue"}
      <br></br>
     
      </div>  
