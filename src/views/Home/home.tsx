@@ -16,7 +16,7 @@ const Home = () => {
 
  useEffect(() => {
     const getArticles = async () => {
-        const response = await axios.get('https://1himh5w4nf.execute-api.us-east-1.amazonaws.com/get-news-api')
+        const response = await axios.get('https://3er53meh8e.execute-api.us-east-1.amazonaws.com/get-news-api')
         console.log(response)
         setArticles(response.data.articles)
     }
@@ -26,24 +26,17 @@ const Home = () => {
 
 
  return (
-   <div className="card"> 
-    <h2 className="card__content">
-     Welcome to Disney Social  {userName} 
-     </h2>  
+   <div> 
+    <div className='home-items'>
+    <img src={require("./welcome.png")}></img>
+      <br></br>
+      <br></br>
+     Welcome to Disney Social {userName}! 
      <br></br>
-    <div>
-     {articles.map(article => {
-                return(
-                    <AmplifyNewsCard 
-                    title={article['title']}
-                    description={article['description']}
-                    url={article['url']}
-                    urlToImage={article['urlToImage']}
-                    />
-                )
-            })}
+    
+     </div>  
 
-    </div>
+ 
   
    </div>
  );

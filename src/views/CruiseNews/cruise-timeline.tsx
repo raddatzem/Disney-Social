@@ -8,7 +8,7 @@ const TimelineTwo = () => {
 
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get('https://1himh5w4nf.execute-api.us-east-1.amazonaws.com/get-disney-cruise-news')
+            const response = await axios.get('https://3er53meh8e.execute-api.us-east-1.amazonaws.com/get-disney-cruise-news')
             console.log(response)
             setArticles(response.data.articles)
         }

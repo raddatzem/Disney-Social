@@ -3,7 +3,9 @@ import {
  Timeline as TimelineView,
  Home as HomeView,
  Login as LoginView,
- CruiseNews as TimelineTwoView 
+ CruiseNews as TimelineTwoView,
+ AddArticle as ArticleView,
+ FetchArticles as FetchArticlesView
 } from '.';
 
  
@@ -26,6 +28,16 @@ const routes = [
  {
     path: '/cruisenews',
     renderer: (params = {}) => <TimelineTwoView {...params} />,
+    authRequired: true
+  },
+  {
+    path: '/addArticle',
+    renderer: (params = {}) => <ArticleView {...params} />,
+    authRequired: true
+  },
+  {
+    path: '/fetchArticles',
+    renderer: (params = {}) => <FetchArticlesView {...params} />,
     authRequired: true
   },
  {

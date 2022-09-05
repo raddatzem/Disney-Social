@@ -6,18 +6,19 @@ import { AmplifyNewsCard } from '../../components/Amplify-Card/amplifyNewsItem';
 
 const Timeline = () => {
     const [articles, setArticles] = useState([])
-
+  
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get('https://1himh5w4nf.execute-api.us-east-1.amazonaws.com/get-disney-world-news')
+            const response = await axios.get('https://3er53meh8e.execute-api.us-east-1.amazonaws.com/get-news-api')
 
             console.log(response.data.articles)
             setArticles(response.data.articles)
+           
         }
         getArticles()
     }, [])
        
-
+   
     
     return ( 
         <div>

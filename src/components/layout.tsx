@@ -21,13 +21,19 @@ export function Layout() {
      <nav className="NavbarItems">
      <h1 className="navbar-logo">Disney Social</h1>
      <img className='icon' src=""></img>
-       <Button className='nav-links' onClick={() => navigate('/')}>News</Button>
+       <Button className='nav-links' onClick={() => navigate('/')}>Home</Button>
        
        <Button className='nav-links'onClick={() => navigate('/cruisenews')}>
          Disney Cruise
        </Button>
        <Button className='nav-links' onClick={() => navigate('/timeline')}>
-         Disney World
+         Disney Parks
+       </Button>
+       <Button className='nav-links' onClick={() => navigate('/addArticle')}>
+         Contribute
+       </Button>
+       <Button className='nav-links' onClick={() => navigate('/fetchArticles')}>
+         User Articles
        </Button>
        {route !== 'authenticated' ? (
          <Button className='nav-links' onClick={() => navigate('/login')}>Login</Button>
