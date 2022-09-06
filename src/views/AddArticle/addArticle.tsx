@@ -1,9 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import axios from "axios";
-import NewsItem from '../../components/NewsItem';
-import { AmplifyNewsCard } from '../../components/Amplify-Card/amplifyNewsItem';
+import React, {useState} from 'react';
 import { Auth } from 'aws-amplify';
 import { TextField, Button } from '@aws-amplify/ui-react';
+import './articleForm.css'
 
 
 
@@ -13,6 +11,7 @@ const AddArticle = () => {
     const [success, setSuccess] = useState(false)
     const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
+    const [image, setImage] = useState("")
   
     const postArticles = async () => {
         const jwtToken = (await Auth.currentSession()).getIdToken().getJwtToken();
@@ -23,7 +22,7 @@ const AddArticle = () => {
             'Content-Type' : 'application/json',
             'Authorization' : jwtToken,
           },
-          body: JSON.stringify({title: title, description: description})
+          body: JSON.stringify({title: title, description: description, image: image})
         });
         if (!resp.ok){
           
@@ -37,9 +36,13 @@ const AddArticle = () => {
     return ( 
         
         
-        <div>
+        <div className="card">
             {success && <div>success</div>}
             {!success && <div>
+
+            <h2>
+               Write Your Own Article
+           </h2>   
             <TextField label="Title" isMultiline={false} 
                         onInput={ (e: any) => {
                             setTitle(e.target.value)
@@ -50,7 +53,8 @@ const AddArticle = () => {
                             setDescription(e.target.value)
                         }}
                         />
-            <Button
+            <br></br>
+            <Button className='button'
                 loadingText=""
                 onClick={() => postArticles()}
                 ariaLabel=""

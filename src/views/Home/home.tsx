@@ -28,10 +28,10 @@ const Home = () => {
  return (
    <div> 
     <div className='home-items'>
-    <img src={require("./welcome.png")}></img>
+    <img className="card" src={require("./welcome.png")}></img>
       <br></br>
       <br></br>
-     Welcome to Disney Social {userName? userName: "Please Login To Continue"}
+      {userName? `Welcome back ${userName}`: "Please Login or Create an Account to Continue"}
      <br></br>
     
      </div>  
